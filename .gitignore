@@ -39,6 +39,7 @@ Thumbs.db
 build/
 out/
 *.tsbuildinfo
+# Note: dist/ is committed for production deployments
 
 # Runtime data
 pids
