@@ -27,7 +27,7 @@ const config = {
     port: Number(getEnv("PORT", "3000")),
     env: (getEnv("NODE_ENV", "development") as AppEnvironment),
     brandName: "MetricmindConcept",
-    corsOrigins: getEnv("CORS_ORIGIN", "http://localhost:3000,https://metricmindconcept.com")
+    corsOrigins: getEnv("CORS_ORIGIN", "http://localhost:3000,https://metricmindconcept.com,https://metricmind-concepts-e-learning-fron.vercel.app")
       .split(",")
       .map((o) => o.trim()),
   },
