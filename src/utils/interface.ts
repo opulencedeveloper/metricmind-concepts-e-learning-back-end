@@ -4,10 +4,13 @@ import { JwtPayload } from "jsonwebtoken";
 import mongoose from "mongoose";
 import { UserType } from "../auth/enum";
 
-export interface CustomRequest extends Request {
+export interface CustomRequest extends Request<any, any, any, any> {
   userId?: mongoose.Types.ObjectId;
   userType?: UserType;
   admin?: any;
+  query: any;
+  params: any;
+  body: any;
 }
 
 export interface CustomHttpResponse {
